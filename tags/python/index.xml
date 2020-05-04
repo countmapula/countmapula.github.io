@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>python on dancron.in</title>
+    <link>https://dancron.in/tags/python/</link>
+    <description>dancron.in (python)</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-gb</language>
+    <lastBuildDate>Thu, 30 Apr 2020 13:33:00 +0100</lastBuildDate>
+    
+    <atom:link href="https://dancron.in/tags/python/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Automation Is a Ladder: part one</title>
+      <link>https://dancron.in/posts/automation-is-a-ladder-part-one/</link>
+      <pubDate>Thu, 30 Apr 2020 13:33:00 +0100</pubDate>
+      
+      <guid>https://dancron.in/posts/automation-is-a-ladder-part-one/</guid>
+      <description>&lt;h1 id=&#34;why-when-and-how-to-automate-tasks-in-esris-arcgis-pro&#34;&gt;Why, when and how to automate tasks in Esri&amp;rsquo;s ArcGIS Pro.&lt;/h1&gt;
+&lt;p&gt;Read on at &lt;a href=&#34;https://medium.com/@dan.cronin/automation-is-a-ladder-part-one-78634d71667f/&#34;&gt;Medium&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>The Perfect Script Tool</title>
+      <link>https://dancron.in/posts/perfect-script-tool/</link>
+      <pubDate>Fri, 24 Apr 2020 13:32:41 +0100</pubDate>
+      
+      <guid>https://dancron.in/posts/perfect-script-tool/</guid>
+      <description>&lt;h1 id=&#34;script-tool-template-for-esris-arcgis-pro&#34;&gt;Script tool template for Esri&amp;rsquo;s ArcGIS Pro.&lt;/h1&gt;
+&lt;p&gt;Read on at &lt;a href=&#34;https://medium.com/@dan.cronin/the-perfect-script-tool-for-esris-arcgis-pro-138817a30a0a/&#34;&gt;Medium&lt;/a&gt; or check the repo on &lt;a href=&#34;https://github.com/countmapula/PerfectScriptTool/&#34;&gt;GitHub&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
