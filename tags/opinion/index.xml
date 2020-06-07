@@ -2,27 +2,27 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>opinion on dancron.in</title>
-    <link>https://dancron.in/tags/opinion/</link>
+    <link>/tags/opinion/</link>
     <description>dancron.in (opinion)</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-gb</language>
     <lastBuildDate>Fri, 08 May 2020 10:31:27 +0100</lastBuildDate>
     
-    <atom:link href="https://dancron.in/tags/opinion/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="/tags/opinion/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>±75</title>
-      <link>https://dancron.in/posts/ve-75/</link>
+      <link>/posts/ve-75/</link>
       <pubDate>Fri, 08 May 2020 10:31:27 +0100</pubDate>
       
-      <guid>https://dancron.in/posts/ve-75/</guid>
+      <guid>/posts/ve-75/</guid>
       <description>&lt;h1 id=&#34;75-years-ago&#34;&gt;75 years ago&lt;/h1&gt;
 &lt;p&gt;Today, we commemorate the sacrifices of generations who fought against
 Nazism in the Second World War. I recall my beloved grandparents
 Leonard, Michael, Sheila and Vera who are enjoying the celebrations from somewhere
 more comfortable.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://dancron.in/img/jesse-sewell-unsplash.jpg&#34; alt=&#34;RIP&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/img/jesse-sewell-unsplash.jpg&#34; alt=&#34;RIP&#34;&gt;&lt;/p&gt;
 &lt;p&gt;It&amp;rsquo;s essential to remember the unprecedented, never-to-be-repeated horrors
 of WWII. What unsettles me today is the difference between the potency of our past glories,
 and the ease with which we collectively neglect future moral risks.

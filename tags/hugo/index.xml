@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>hugo on dancron.in</title>
-    <link>https://dancron.in/tags/hugo/</link>
+    <link>/tags/hugo/</link>
     <description>dancron.in (hugo)</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-gb</language>
     <lastBuildDate>Sun, 03 May 2020 13:14:26 +0100</lastBuildDate>
     
-    <atom:link href="https://dancron.in/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Hello World</title>
-      <link>https://dancron.in/posts/hello-world/</link>
+      <link>/posts/hello-world/</link>
       <pubDate>Sun, 03 May 2020 13:14:26 +0100</pubDate>
       
-      <guid>https://dancron.in/posts/hello-world/</guid>
+      <guid>/posts/hello-world/</guid>
       <description>&lt;h1 id=&#34;dancronin-is-live&#34;&gt;dancron.in is live.&lt;/h1&gt;
 &lt;p&gt;Hosting by &lt;a href=&#34;https://pages.github.com/&#34;&gt;GitHub&lt;/a&gt;, site by &lt;a href=&#34;https://gohugo.io/&#34;&gt;Hugo&lt;/a&gt; with &lt;a href=&#34;https://github.com/mitrichius/hugo-theme-anubis&#34;&gt;Anubis&lt;/a&gt; theme.&lt;/p&gt;
 </description>

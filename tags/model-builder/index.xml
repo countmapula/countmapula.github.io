@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>model builder on dancron.in</title>
-    <link>https://dancron.in/tags/model-builder/</link>
+    <link>/tags/model-builder/</link>
     <description>dancron.in (model builder)</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-gb</language>
     <lastBuildDate>Wed, 27 May 2020 16:30:00 +0100</lastBuildDate>
     
-    <atom:link href="https://dancron.in/tags/model-builder/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="/tags/model-builder/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Automation is a ladder: ModelBuilder</title>
-      <link>https://dancron.in/posts/automation-is-a-ladder-part-two-model-builder/</link>
+      <link>/posts/automation-is-a-ladder-part-two-model-builder/</link>
       <pubDate>Wed, 27 May 2020 16:30:00 +0100</pubDate>
       
-      <guid>https://dancron.in/posts/automation-is-a-ladder-part-two-model-builder/</guid>
+      <guid>/posts/automation-is-a-ladder-part-two-model-builder/</guid>
       <description>&lt;h1 id=&#34;getting-the-most-out-of-esris-modelbuilder-framework&#34;&gt;Getting the most out of Esri&amp;rsquo;s ModelBuilder framework.&lt;/h1&gt;
 &lt;p&gt;Read on at &lt;a href=&#34;https://medium.com/@dan.cronin/automation-is-a-ladder-modelbuilder-b5242cbc39b5&#34;&gt;Medium&lt;/a&gt;.&lt;/p&gt;
 </description>

@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>esri on dancron.in</title>
-    <link>https://dancron.in/tags/esri/</link>
+    <link>/tags/esri/</link>
     <description>dancron.in (esri)</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-gb</language>
     <lastBuildDate>Wed, 27 May 2020 16:30:00 +0100</lastBuildDate>
     
-    <atom:link href="https://dancron.in/tags/esri/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="/tags/esri/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Automation is a ladder: ModelBuilder</title>
-      <link>https://dancron.in/posts/automation-is-a-ladder-part-two-model-builder/</link>
+      <link>/posts/automation-is-a-ladder-part-two-model-builder/</link>
       <pubDate>Wed, 27 May 2020 16:30:00 +0100</pubDate>
       
-      <guid>https://dancron.in/posts/automation-is-a-ladder-part-two-model-builder/</guid>
+      <guid>/posts/automation-is-a-ladder-part-two-model-builder/</guid>
       <description>&lt;h1 id=&#34;getting-the-most-out-of-esris-modelbuilder-framework&#34;&gt;Getting the most out of Esri&amp;rsquo;s ModelBuilder framework.&lt;/h1&gt;
 &lt;p&gt;Read on at &lt;a href=&#34;https://medium.com/@dan.cronin/automation-is-a-ladder-modelbuilder-b5242cbc39b5&#34;&gt;Medium&lt;/a&gt;.&lt;/p&gt;
 </description>
@@ -24,10 +24,10 @@
     
     <item>
       <title>Automation is a ladder: part one</title>
-      <link>https://dancron.in/posts/automation-is-a-ladder-part-one/</link>
+      <link>/posts/automation-is-a-ladder-part-one/</link>
       <pubDate>Thu, 30 Apr 2020 13:33:00 +0100</pubDate>
       
-      <guid>https://dancron.in/posts/automation-is-a-ladder-part-one/</guid>
+      <guid>/posts/automation-is-a-ladder-part-one/</guid>
       <description>&lt;h1 id=&#34;why-when-and-how-to-automate-tasks-in-esris-arcgis-pro&#34;&gt;Why, when and how to automate tasks in Esri&amp;rsquo;s ArcGIS Pro.&lt;/h1&gt;
 &lt;p&gt;Read on at &lt;a href=&#34;https://medium.com/@dan.cronin/automation-is-a-ladder-part-one-78634d71667f/&#34;&gt;Medium&lt;/a&gt;.&lt;/p&gt;
 </description>
@@ -35,10 +35,10 @@
     
     <item>
       <title>The Perfect Script Tool</title>
-      <link>https://dancron.in/posts/perfect-script-tool/</link>
+      <link>/posts/perfect-script-tool/</link>
       <pubDate>Fri, 24 Apr 2020 13:32:41 +0100</pubDate>
       
-      <guid>https://dancron.in/posts/perfect-script-tool/</guid>
+      <guid>/posts/perfect-script-tool/</guid>
       <description>&lt;h1 id=&#34;script-tool-template-for-esris-arcgis-pro&#34;&gt;Script tool template for Esri&amp;rsquo;s ArcGIS Pro.&lt;/h1&gt;
 &lt;p&gt;Read on at &lt;a href=&#34;https://medium.com/@dan.cronin/the-perfect-script-tool-for-esris-arcgis-pro-138817a30a0a/&#34;&gt;Medium&lt;/a&gt; or check the repo on &lt;a href=&#34;https://github.com/countmapula/PerfectScriptTool/&#34;&gt;GitHub&lt;/a&gt;.&lt;/p&gt;
 </description>

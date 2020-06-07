@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on dancron.in</title>
-    <link>https://dancron.in/posts/</link>
+    <link>/posts/</link>
     <description>dancron.in (Posts)</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-gb</language>
     <lastBuildDate>Wed, 27 May 2020 16:30:00 +0100</lastBuildDate>
     
-    <atom:link href="https://dancron.in/posts/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="/posts/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Automation is a ladder: ModelBuilder</title>
-      <link>https://dancron.in/posts/automation-is-a-ladder-part-two-model-builder/</link>
+      <link>/posts/automation-is-a-ladder-part-two-model-builder/</link>
       <pubDate>Wed, 27 May 2020 16:30:00 +0100</pubDate>
       
-      <guid>https://dancron.in/posts/automation-is-a-ladder-part-two-model-builder/</guid>
+      <guid>/posts/automation-is-a-ladder-part-two-model-builder/</guid>
       <description>&lt;h1 id=&#34;getting-the-most-out-of-esris-modelbuilder-framework&#34;&gt;Getting the most out of Esri&amp;rsquo;s ModelBuilder framework.&lt;/h1&gt;
 &lt;p&gt;Read on at &lt;a href=&#34;https://medium.com/@dan.cronin/automation-is-a-ladder-modelbuilder-b5242cbc39b5&#34;&gt;Medium&lt;/a&gt;.&lt;/p&gt;
 </description>
@@ -24,16 +24,16 @@
     
     <item>
       <title>±75</title>
-      <link>https://dancron.in/posts/ve-75/</link>
+      <link>/posts/ve-75/</link>
       <pubDate>Fri, 08 May 2020 10:31:27 +0100</pubDate>
       
-      <guid>https://dancron.in/posts/ve-75/</guid>
+      <guid>/posts/ve-75/</guid>
       <description>&lt;h1 id=&#34;75-years-ago&#34;&gt;75 years ago&lt;/h1&gt;
 &lt;p&gt;Today, we commemorate the sacrifices of generations who fought against
 Nazism in the Second World War. I recall my beloved grandparents
 Leonard, Michael, Sheila and Vera who are enjoying the celebrations from somewhere
 more comfortable.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://dancron.in/img/jesse-sewell-unsplash.jpg&#34; alt=&#34;RIP&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/img/jesse-sewell-unsplash.jpg&#34; alt=&#34;RIP&#34;&gt;&lt;/p&gt;
 &lt;p&gt;It&amp;rsquo;s essential to remember the unprecedented, never-to-be-repeated horrors
 of WWII. What unsettles me today is the difference between the potency of our past glories,
 and the ease with which we collectively neglect future moral risks.
@@ -100,10 +100,10 @@ throughout the 21st century.&lt;/p&gt;
     
     <item>
       <title>Hello World</title>
-      <link>https://dancron.in/posts/hello-world/</link>
+      <link>/posts/hello-world/</link>
       <pubDate>Sun, 03 May 2020 13:14:26 +0100</pubDate>
       
-      <guid>https://dancron.in/posts/hello-world/</guid>
+      <guid>/posts/hello-world/</guid>
       <description>&lt;h1 id=&#34;dancronin-is-live&#34;&gt;dancron.in is live.&lt;/h1&gt;
 &lt;p&gt;Hosting by &lt;a href=&#34;https://pages.github.com/&#34;&gt;GitHub&lt;/a&gt;, site by &lt;a href=&#34;https://gohugo.io/&#34;&gt;Hugo&lt;/a&gt; with &lt;a href=&#34;https://github.com/mitrichius/hugo-theme-anubis&#34;&gt;Anubis&lt;/a&gt; theme.&lt;/p&gt;
 </description>
@@ -111,10 +111,10 @@ throughout the 21st century.&lt;/p&gt;
     
     <item>
       <title>Automation is a ladder: part one</title>
-      <link>https://dancron.in/posts/automation-is-a-ladder-part-one/</link>
+      <link>/posts/automation-is-a-ladder-part-one/</link>
       <pubDate>Thu, 30 Apr 2020 13:33:00 +0100</pubDate>
       
-      <guid>https://dancron.in/posts/automation-is-a-ladder-part-one/</guid>
+      <guid>/posts/automation-is-a-ladder-part-one/</guid>
       <description>&lt;h1 id=&#34;why-when-and-how-to-automate-tasks-in-esris-arcgis-pro&#34;&gt;Why, when and how to automate tasks in Esri&amp;rsquo;s ArcGIS Pro.&lt;/h1&gt;
 &lt;p&gt;Read on at &lt;a href=&#34;https://medium.com/@dan.cronin/automation-is-a-ladder-part-one-78634d71667f/&#34;&gt;Medium&lt;/a&gt;.&lt;/p&gt;
 </description>
@@ -122,10 +122,10 @@ throughout the 21st century.&lt;/p&gt;
     
     <item>
       <title>The Perfect Script Tool</title>
-      <link>https://dancron.in/posts/perfect-script-tool/</link>
+      <link>/posts/perfect-script-tool/</link>
       <pubDate>Fri, 24 Apr 2020 13:32:41 +0100</pubDate>
       
-      <guid>https://dancron.in/posts/perfect-script-tool/</guid>
+      <guid>/posts/perfect-script-tool/</guid>
       <description>&lt;h1 id=&#34;script-tool-template-for-esris-arcgis-pro&#34;&gt;Script tool template for Esri&amp;rsquo;s ArcGIS Pro.&lt;/h1&gt;
 &lt;p&gt;Read on at &lt;a href=&#34;https://medium.com/@dan.cronin/the-perfect-script-tool-for-esris-arcgis-pro-138817a30a0a/&#34;&gt;Medium&lt;/a&gt; or check the repo on &lt;a href=&#34;https://github.com/countmapula/PerfectScriptTool/&#34;&gt;GitHub&lt;/a&gt;.&lt;/p&gt;
 </description>
@@ -133,10 +133,10 @@ throughout the 21st century.&lt;/p&gt;
     
     <item>
       <title>Crowdsource against COVID-19</title>
-      <link>https://dancron.in/posts/crowdsource-against-covid/</link>
+      <link>/posts/crowdsource-against-covid/</link>
       <pubDate>Fri, 03 Apr 2020 13:33:22 +0100</pubDate>
       
-      <guid>https://dancron.in/posts/crowdsource-against-covid/</guid>
+      <guid>/posts/crowdsource-against-covid/</guid>
       <description>&lt;h1 id=&#34;fighting-covid-is-hot&#34;&gt;Fighting COVID is HOT.&lt;/h1&gt;
 &lt;p&gt;Technical volunteering and up-skilling opportunities with the &lt;a href=&#34;https://www.hotosm.org/&#34;&gt;Humanitarian OpenStreetMap team&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;Read on at &lt;a href=&#34;https://www.linkedin.com/pulse/something-else-you-can-do-covid-19-daniel-cronin/&#34;&gt;LinkedIn&lt;/a&gt;.&lt;/p&gt;
