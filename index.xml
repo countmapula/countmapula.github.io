@@ -6,10 +6,21 @@
     <description>dancron.in</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-gb</language>
-    <lastBuildDate>Wed, 27 May 2020 16:30:00 +0100</lastBuildDate>
+    <lastBuildDate>Mon, 10 Aug 2020 14:26:20 +0100</lastBuildDate>
     
     <atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>am-sam-s3</title>
+      <link>/posts/am-sam-s3/</link>
+      <pubDate>Mon, 10 Aug 2020 14:26:20 +0100</pubDate>
+      
+      <guid>/posts/am-sam-s3/</guid>
+      <description>&lt;h1 id=&#34;a-beginners-guide-to-lambda-and-s3&#34;&gt;A beginner&amp;rsquo;s guide to Lambda and S3&lt;/h1&gt;
+&lt;p&gt;Read on at &lt;a href=&#34;https://medium.com/@dan.cronin/getting-started-with-lambda-python-and-s3-with-boto-and-sam-9a3593b65d12?source=friends_link&amp;amp;sk=214fbf5a1ef62229f9a3ee4665542c0b/&#34;&gt;Medium&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Automation is a ladder: ModelBuilder</title>

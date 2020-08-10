@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>github on dancron.in</title>
-    <link>/tags/github/</link>
-    <description>dancron.in (github)</description>
+    <title>s3 on dancron.in</title>
+    <link>/tags/s3/</link>
+    <description>dancron.in (s3)</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-gb</language>
     <lastBuildDate>Mon, 10 Aug 2020 14:26:20 +0100</lastBuildDate>
     
-    <atom:link href="/tags/github/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="/tags/s3/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
@@ -19,17 +19,6 @@
       <guid>/posts/am-sam-s3/</guid>
       <description>&lt;h1 id=&#34;a-beginners-guide-to-lambda-and-s3&#34;&gt;A beginner&amp;rsquo;s guide to Lambda and S3&lt;/h1&gt;
 &lt;p&gt;Read on at &lt;a href=&#34;https://medium.com/@dan.cronin/getting-started-with-lambda-python-and-s3-with-boto-and-sam-9a3593b65d12?source=friends_link&amp;amp;sk=214fbf5a1ef62229f9a3ee4665542c0b/&#34;&gt;Medium&lt;/a&gt;.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Hello World</title>
-      <link>/posts/hello-world/</link>
-      <pubDate>Sun, 03 May 2020 13:14:26 +0100</pubDate>
-      
-      <guid>/posts/hello-world/</guid>
-      <description>&lt;h1 id=&#34;dancronin-is-live&#34;&gt;dancron.in is live.&lt;/h1&gt;
-&lt;p&gt;Hosting by &lt;a href=&#34;https://pages.github.com/&#34;&gt;GitHub&lt;/a&gt;, site by &lt;a href=&#34;https://gohugo.io/&#34;&gt;Hugo&lt;/a&gt; with &lt;a href=&#34;https://github.com/mitrichius/hugo-theme-anubis&#34;&gt;Anubis&lt;/a&gt; theme.&lt;/p&gt;
 </description>
     </item>
     
