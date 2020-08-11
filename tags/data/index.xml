@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>covid on dancron.in</title>
-    <link>/tags/covid/</link>
-    <description>dancron.in (covid)</description>
+    <title>data on dancron.in</title>
+    <link>/tags/data/</link>
+    <description>dancron.in (data)</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-gb</language>
     <lastBuildDate>Tue, 11 Aug 2020 17:46:28 +0100</lastBuildDate>
     
-    <atom:link href="/tags/covid/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="/tags/data/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
@@ -86,18 +86,6 @@ become very difficult to meaningfully visualise (a good problem to have). I&amp;
 of consistency in some cases.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;Thanks and stay safe.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Crowdsource against COVID-19</title>
-      <link>/posts/crowdsource-against-covid/</link>
-      <pubDate>Fri, 03 Apr 2020 13:33:22 +0100</pubDate>
-      
-      <guid>/posts/crowdsource-against-covid/</guid>
-      <description>&lt;h1 id=&#34;fighting-covid-is-hot&#34;&gt;Fighting COVID is HOT.&lt;/h1&gt;
-&lt;p&gt;Technical volunteering and up-skilling opportunities with the &lt;a href=&#34;https://www.hotosm.org/&#34;&gt;Humanitarian OpenStreetMap team&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;Read on at &lt;a href=&#34;https://www.linkedin.com/pulse/something-else-you-can-do-covid-19-daniel-cronin/&#34;&gt;LinkedIn&lt;/a&gt;.&lt;/p&gt;
 </description>
     </item>
     

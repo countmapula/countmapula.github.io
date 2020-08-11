@@ -3,22 +3,57 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>/tags/aws/</loc>
+    <lastmod>2020-08-11T17:46:28+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/covid/</loc>
+    <lastmod>2020-08-11T17:46:28+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/covid-gb/</loc>
+    <lastmod>2020-08-11T17:46:28+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/</loc>
+    <lastmod>2020-08-11T17:46:28+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/data/</loc>
+    <lastmod>2020-08-11T17:46:28+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/esri/</loc>
+    <lastmod>2020-08-11T17:46:28+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/</loc>
+    <lastmod>2020-08-11T17:46:28+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/python/</loc>
+    <lastmod>2020-08-11T17:46:28+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/</loc>
+    <lastmod>2020-08-11T17:46:28+01:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/posts/am-sam-s3/</loc>
     <lastmod>2020-08-10T14:26:20+01:00</lastmod>
   </url>
   
   <url>
     <loc>/tags/automation/</loc>
-    <lastmod>2020-08-10T14:26:20+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tags/aws/</loc>
-    <lastmod>2020-08-10T14:26:20+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/</loc>
     <lastmod>2020-08-10T14:26:20+01:00</lastmod>
   </url>
   
@@ -33,11 +68,6 @@
   </url>
   
   <url>
-    <loc>/posts/</loc>
-    <lastmod>2020-08-10T14:26:20+01:00</lastmod>
-  </url>
-  
-  <url>
     <loc>/tags/s3/</loc>
     <lastmod>2020-08-10T14:26:20+01:00</lastmod>
   </url>
@@ -48,17 +78,7 @@
   </url>
   
   <url>
-    <loc>/tags/</loc>
-    <lastmod>2020-08-10T14:26:20+01:00</lastmod>
-  </url>
-  
-  <url>
     <loc>/posts/automation-is-a-ladder-part-two-model-builder/</loc>
-    <lastmod>2020-05-27T16:30:00+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tags/esri/</loc>
     <lastmod>2020-05-27T16:30:00+01:00</lastmod>
   </url>
   
@@ -128,11 +148,6 @@
   </url>
   
   <url>
-    <loc>/tags/python/</loc>
-    <lastmod>2020-04-30T13:33:00+01:00</lastmod>
-  </url>
-  
-  <url>
     <loc>/tags/script-tool/</loc>
     <lastmod>2020-04-24T13:32:41+01:00</lastmod>
   </url>
@@ -140,11 +155,6 @@
   <url>
     <loc>/posts/perfect-script-tool/</loc>
     <lastmod>2020-04-24T13:32:41+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tags/covid/</loc>
-    <lastmod>2020-04-03T13:33:22+01:00</lastmod>
   </url>
   
   <url>

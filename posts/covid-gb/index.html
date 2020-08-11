@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en-gb">
+<head>
+    
+        
+<meta charset="utf-8">
+<meta name="HandheldFriendly" content="True">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="referrer" content="no-referrer-when-downgrade">
+
+<title>Covid dashboard live  - dancron.in</title>
+<meta name="description" content="A personal website.">
+
+<link rel="icon" type="image/x-icon" href="/favicon.ico">
+<link rel="apple-touch-icon-precomposed" href="/favicon.png">
+
+<link rel="stylesheet" href="/css/style.css?rnd=1597180478" />
+
+
+
+<meta property="og:title" content="Covid dashboard live" />
+<meta property="og:description" content="Understanding relative risk across England and Wales." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="/posts/covid-gb/" />
+<meta property="article:published_time" content="2020-08-11T17:46:28+01:00" />
+<meta property="article:modified_time" content="2020-08-11T17:46:28+01:00" />
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Covid dashboard live"/>
+<meta name="twitter:description" content="Understanding relative risk across England and Wales."/>
+
+
+
+
+
+
+
+    
+</head>
+<body>
+    <a class="skip-main" href="#main">Skip to main content</a>
+    <div class="container">
+        <header> 
+            
+                <h1 class="site-header">
+    <a href="/">dancron.in</a>
+</h1>
+<nav>
+    
+    
+    <a class="" href="/about/" title="">About</a>
+    
+    <a class="" href="/posts/" title="">Posts</a>
+    
+    <a class="" href="/tags/" title="">Tags</a>
+    
+</nav>
+
+            
+        </header>
+        <main id="main" tabindex="-1"> 
+            
+
+    <article class="post">
+        <header>
+            <h1>Covid dashboard live</h1>
+        </header>
+        <div class="content">
+            <p><a href="https://data.dancron.in/covid-gb/">https://data.dancron.in/covid-gb/</a></p>
+<p>Yes, it&rsquo;s another lockdown project. Consume at your own risk and protect yourself at all times!</p>
+<p>I was inspired by The Guardian&rsquo;s <a href="https://www.theguardian.com/world/2020/aug/11/coronavirus-uk-map-the-latest-deaths-and-confirmed-covid-cases">data journalists</a> and kept their tasty colour scheme.</p>
+<p>The app reads data from the GOV.UK Coronavirus <a href="https://coronavirus.data.gov.uk/developers-guide">API</a>,
+stores it in an Amazon service and displays it using Esri&rsquo;s JS API.</p>
+<p>It&rsquo;s designed to answer two questions:</p>
+<ul>
+<li>
+<p>Is the rate of COVID detection in my area high or low, compared to other places?</p>
+</li>
+<li>
+<p>Is the direction of travel (that is, the rate of change), good or bad compared to other areas?</p>
+</li>
+</ul>
+<h2 id="how-does-it-work">How does it work?</h2>
+<p>You can either browse the map to get a general sense of cases across England and Wales, or use the Local Authority
+search tool to get details about your local area.</p>
+<p><img src="/img/covid-gb/ltla-search.png" alt="LTLA search"></p>
+<p>The app uses Lower Tier Local Authorities (LTLAs) and includes all of the LTLA data being published at the time of writing.</p>
+<p>Icons at the top left are,</p>
+<p><img src="/img/covid-gb/top-left.png" alt="Top left"></p>
+<ul>
+<li>Go home</li>
+<li>Toggle case rate / case change</li>
+<li>Link to this blog</li>
+</ul>
+<p>Mobile users will want to toggle the legend button (bottom right).</p>
+<h1 id="design">Design</h1>
+<p>There are a few differences between this app and TG&rsquo;s map, some obvious, some less so.</p>
+<h2 id="cartogram">Cartogram</h2>
+<p>Cartograms use regular shapes (often hexagons, triangles or squares) to represent territories such as countries, states or counties.
+They are particularly useful for mapping human-focused information. When using real administrative boundaries, as in TG&rsquo;s map,
+sparsely-populated rural areas carry more visual weight compared to urban population centres. Cartograms can go some way to address this
+and present an even picture of the underlying information.</p>
+<p>I&rsquo;ve used hexagons to represent each lower-tier local authority (LTLAs), whereas TG use
+the actual boundaries of the upper-tier local authorities (UTLAs).</p>
+<p>My primary reason for this choice is that Ben Flanagan of Esri UK <a href="https://www.arcgis.com/home/item.html?id=593037bc399e460bb7c6c631ceff67b4">already created</a> a hexagons based on 2017&rsquo;s boundaries :^)</p>
+<h2 id="data-classification">Data classification</h2>
+<p>TG chose to show the week-on-week local change as a percentage. I think this is a fair choice in order to make the information
+as clear as possible, but it comes with some shortcomings.</p>
+<p>Firstly, when viewed through the lens of local authorities, cases of coronavirus are not equal.
+Detection of one case in Birmingham, population 1,000,000, is not of equal concern to detection of one
+case in Orkney, population 20,000. The risk the the individuals concerned are equal, but the proportion of infected people
+in Orkney is greater.</p>
+<p>Secondly, when we consider percentages of raw case numbers, we lose a lot of information about the magnitude of the problem.
+To continue with the examples above, if Birmingham&rsquo;s detections increased from one to two, that would be a case rate
+increase of 0.0001% in the population of one million.
+If Orkney increased from 10 to 20 detections, that would be a case rate increase of 0.05% in the population of 20k.
+For the purposes of TG&rsquo;s map, both are local increases of 100% - even though the hypothetical situation in Orkney is 500 times worse.</p>
+<p>I have bravely avoided the problem of communicating this by not quantifying the legend at all - it just says better or worse, which is probably too vague for a mainstream news outlet. The underlying classifications I&rsquo;ve used are based on standard deviations from the average.
+Places with the most intense green or pink colours are over two standard deviations away from the average case rate, or the average
+rate of change.</p>
+<p>Presenting this information in a way which is accurate, accessible and transparent is challenging and I hope that I&rsquo;ve made
+sensible compromises.</p>
+<h2 id="caveats">Caveats</h2>
+<h3 id="scotland">Scotland</h3>
+<p>Firstly, apologies to Scotland. The UK Gov API does not include Scottish data at the local level. I make no political comment here.</p>
+<h3 id="magnitude">Magnitude</h3>
+<p>My cartographic choices don&rsquo;t capture far outliers, although you can see specific details in the pop ups. As cases hopefully approach zero, they
+become very difficult to meaningfully visualise (a good problem to have). I&rsquo;m sure others can point out statistical weaknesses, and I&rsquo;m open to feedback.</p>
+<h3 id="the-legend">The legend</h3>
+<p>I have used the term &lsquo;Significant&rsquo; loosely -  I have not tested for statistical significance.</p>
+<h3 id="known-issues">Known issues</h3>
+<ul>
+<li>The JavaScript API used for display generalises the hexagons, leaving them irregular. Once seen, never unseen.</li>
+<li>The latest result&rsquo;s date is not always consistent across local authorities. I&rsquo;m using the latest results available, at the expense
+of consistency in some cases.</li>
+</ul>
+<p>Thanks and stay safe.</p>
+
+        </div>
+        <div class="article-info">
+    
+        <div class="article-date">2020-08-11</div>
+    
+    <div class="article-taxonomies">
+        
+            
+                <ul class="article-tags">
+                    
+                        <li><a href="/tags/aws">#aws</a></li>
+                    
+                        <li><a href="/tags/covid">#covid</a></li>
+                    
+                        <li><a href="/tags/data">#data</a></li>
+                    
+                        <li><a href="/tags/esri">#esri</a></li>
+                    
+                        <li><a href="/tags/python">#python</a></li>
+                    
+                </ul>
+        
+    </div>
+</div>
+
+    </article>
+    
+
+
+        </main>
+        <footer>
+            
+                <p>© Daniel Cronin 2020<br>
+Powered by <a target="_blank" href="https://gohugo.io/">Hugo</a> & <a target="_blank" href="https://github.com/mitrichius/hugo-theme-anubis">Anubis</a>.
+</p>
+
+            
+        </footer>
+    </div>
+</body>
+</html>
