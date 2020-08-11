@@ -34,10 +34,8 @@ stores it in an Amazon service and displays it using Esri&amp;rsquo;s JS API.&lt
 &lt;h2 id=&#34;how-does-it-work&#34;&gt;How does it work?&lt;/h2&gt;
 &lt;p&gt;You can either browse the map to get a general sense of cases across England and Wales, or use the Local Authority
 search tool to get details about your local area.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;/img/covid-gb/ltla-search.png&#34; alt=&#34;LTLA search&#34;&gt;&lt;/p&gt;
 &lt;p&gt;The app uses Lower Tier Local Authorities (LTLAs) and includes all of the LTLA data being published at the time of writing.&lt;/p&gt;
 &lt;p&gt;Icons at the top left are,&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;/img/covid-gb/top-left.png&#34; alt=&#34;Top left&#34;&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Go home&lt;/li&gt;
 &lt;li&gt;Toggle case rate / case change&lt;/li&gt;
