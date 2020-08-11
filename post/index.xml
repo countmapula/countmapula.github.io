@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on dancron.in</title>
+    <link>/post/</link>
+    <description>dancron.in (Posts)</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-gb</language>
+    <lastBuildDate>Tue, 11 Aug 2020 17:46:28 +0100</lastBuildDate>
+    
+    <atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Covid dashboard live</title>
+      <link>/posts/covid-gb/</link>
+      <pubDate>Tue, 11 Aug 2020 17:46:28 +0100</pubDate>
+      
+      <guid>/posts/covid-gb/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://data.dancron.in/covid-gb/&#34;&gt;https://data.dancron.in/covid-gb/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Yes, it&amp;rsquo;s another lockdown project. Consume at your own risk and protect yourself at all times!&lt;/p&gt;
+&lt;p&gt;I was inspired by The Guardian&amp;rsquo;s &lt;a href=&#34;https://www.theguardian.com/world/2020/aug/11/coronavirus-uk-map-the-latest-deaths-and-confirmed-covid-cases&#34;&gt;data journalists&lt;/a&gt; and kept their tasty colour scheme.&lt;/p&gt;
+&lt;p&gt;The app reads data from the GOV.UK Coronavirus &lt;a href=&#34;https://coronavirus.data.gov.uk/developers-guide&#34;&gt;API&lt;/a&gt;,
+stores it in an Amazon service and displays it using Esri&amp;rsquo;s JS API.&lt;/p&gt;
+&lt;p&gt;It&amp;rsquo;s designed to answer two questions:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Is the rate of COVID detection in my area high or low, compared to other places?&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Is the direction of travel (that is, the rate of change), good or bad compared to other areas?&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;how-does-it-work&#34;&gt;How does it work?&lt;/h2&gt;
+&lt;p&gt;You can either browse the map to get a general sense of cases across England and Wales, or use the Local Authority
+search tool to get details about your local area.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/img/covid-gb/ltla-search.png&#34; alt=&#34;LTLA search&#34;&gt;&lt;/p&gt;
+&lt;p&gt;The app uses Lower Tier Local Authorities (LTLAs) and includes all of the LTLA data being published at the time of writing.&lt;/p&gt;
+&lt;p&gt;Icons at the top left are,&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/img/covid-gb/top-left.png&#34; alt=&#34;Top left&#34;&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Go home&lt;/li&gt;
+&lt;li&gt;Toggle case rate / case change&lt;/li&gt;
+&lt;li&gt;Link to this blog&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Mobile users will want to toggle the legend button (bottom right).&lt;/p&gt;
+&lt;h1 id=&#34;design&#34;&gt;Design&lt;/h1&gt;
+&lt;p&gt;There are a few differences between this app and TG&amp;rsquo;s map, some obvious, some less so.&lt;/p&gt;
+&lt;h2 id=&#34;cartogram&#34;&gt;Cartogram&lt;/h2&gt;
+&lt;p&gt;Cartograms use regular shapes (often hexagons, triangles or squares) to represent territories such as countries, states or counties.
+They are particularly useful for mapping human-focused information. When using real administrative boundaries, as in TG&amp;rsquo;s map,
+sparsely-populated rural areas carry more visual weight compared to urban population centres. Cartograms can go some way to address this
+and present an even picture of the underlying information.&lt;/p&gt;
+&lt;p&gt;I&amp;rsquo;ve used hexagons to represent each lower-tier local authority (LTLAs), whereas TG use
+the actual boundaries of the upper-tier local authorities (UTLAs).&lt;/p&gt;
+&lt;p&gt;My primary reason for this choice is that Ben Flanagan of Esri UK &lt;a href=&#34;https://www.arcgis.com/home/item.html?id=593037bc399e460bb7c6c631ceff67b4&#34;&gt;already created&lt;/a&gt; a hexagons based on 2017&amp;rsquo;s boundaries :^)&lt;/p&gt;
+&lt;h2 id=&#34;data-classification&#34;&gt;Data classification&lt;/h2&gt;
+&lt;p&gt;TG chose to show the week-on-week local change as a percentage. I think this is a fair choice in order to make the information
+as clear as possible, but it comes with some shortcomings.&lt;/p&gt;
+&lt;p&gt;Firstly, when viewed through the lens of local authorities, cases of coronavirus are not equal.
+Detection of one case in Birmingham, population 1,000,000, is not of equal concern to detection of one
+case in Orkney, population 20,000. The risk the the individuals concerned are equal, but the proportion of infected people
+in Orkney is greater.&lt;/p&gt;
+&lt;p&gt;Secondly, when we consider percentages of raw case numbers, we lose a lot of information about the magnitude of the problem.
+To continue with the examples above, if Birmingham&amp;rsquo;s detections increased from one to two, that would be a case rate
+increase of 0.0001% in the population of one million.
+If Orkney increased from 10 to 20 detections, that would be a case rate increase of 0.05% in the population of 20k.
+For the purposes of TG&amp;rsquo;s map, both are local increases of 100% - even though the hypothetical situation in Orkney is 500 times worse.&lt;/p&gt;
+&lt;p&gt;I have bravely avoided the problem of communicating this by not quantifying the legend at all - it just says better or worse, which is probably too vague for a mainstream news outlet. The underlying classifications I&amp;rsquo;ve used are based on standard deviations from the average.
+Places with the most intense green or pink colours are over two standard deviations away from the average case rate, or the average
+rate of change.&lt;/p&gt;
+&lt;p&gt;Presenting this information in a way which is accurate, accessible and transparent is challenging and I hope that I&amp;rsquo;ve made
+sensible compromises.&lt;/p&gt;
+&lt;h2 id=&#34;caveats&#34;&gt;Caveats&lt;/h2&gt;
+&lt;h3 id=&#34;scotland&#34;&gt;Scotland&lt;/h3&gt;
+&lt;p&gt;Firstly, apologies to Scotland. The UK Gov API does not include Scottish data at the local level. I make no political comment here.&lt;/p&gt;
+&lt;h3 id=&#34;magnitude&#34;&gt;Magnitude&lt;/h3&gt;
+&lt;p&gt;My cartographic choices don&amp;rsquo;t capture far outliers, although you can see specific details in the pop ups. As cases hopefully approach zero, they
+become very difficult to meaningfully visualise (a good problem to have). I&amp;rsquo;m sure others can point out statistical weaknesses, and I&amp;rsquo;m open to feedback.&lt;/p&gt;
+&lt;h3 id=&#34;the-legend&#34;&gt;The legend&lt;/h3&gt;
+&lt;p&gt;I have used the term &amp;lsquo;Significant&amp;rsquo; loosely -  I have not tested for statistical significance.&lt;/p&gt;
+&lt;h3 id=&#34;known-issues&#34;&gt;Known issues&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;The JavaScript API used for display generalises the hexagons, leaving them irregular. Once seen, never unseen.&lt;/li&gt;
+&lt;li&gt;The latest result&amp;rsquo;s date is not always consistent across local authorities. I&amp;rsquo;m using the latest results available, at the expense
+of consistency in some cases.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Thanks and stay safe.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>am-sam-s3</title>
+      <link>/posts/am-sam-s3/</link>
+      <pubDate>Mon, 10 Aug 2020 14:26:20 +0100</pubDate>
+      
+      <guid>/posts/am-sam-s3/</guid>
+      <description>&lt;h1 id=&#34;a-beginners-guide-to-lambda-and-s3&#34;&gt;A beginner&amp;rsquo;s guide to Lambda and S3&lt;/h1&gt;
+&lt;p&gt;Read on at &lt;a href=&#34;https://medium.com/@dan.cronin/getting-started-with-lambda-python-and-s3-with-boto-and-sam-9a3593b65d12?source=friends_link&amp;amp;sk=214fbf5a1ef62229f9a3ee4665542c0b/&#34;&gt;Medium&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Automation is a ladder: ModelBuilder</title>
+      <link>/posts/automation-is-a-ladder-part-two-model-builder/</link>
+      <pubDate>Wed, 27 May 2020 16:30:00 +0100</pubDate>
+      
+      <guid>/posts/automation-is-a-ladder-part-two-model-builder/</guid>
+      <description>&lt;h1 id=&#34;getting-the-most-out-of-esris-modelbuilder-framework&#34;&gt;Getting the most out of Esri&amp;rsquo;s ModelBuilder framework.&lt;/h1&gt;
+&lt;p&gt;Read on at &lt;a href=&#34;https://medium.com/@dan.cronin/automation-is-a-ladder-modelbuilder-b5242cbc39b5&#34;&gt;Medium&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>±75</title>
+      <link>/posts/ve-75/</link>
+      <pubDate>Fri, 08 May 2020 10:31:27 +0100</pubDate>
+      
+      <guid>/posts/ve-75/</guid>
+      <description>&lt;h1 id=&#34;75-years-ago&#34;&gt;75 years ago&lt;/h1&gt;
+&lt;p&gt;Today, we commemorate the sacrifices of generations who fought against
+Nazism in the Second World War. I recall my beloved grandparents
+Leonard, Michael, Sheila and Vera who are enjoying the celebrations from somewhere
+more comfortable.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/img/jesse-sewell-unsplash.jpg&#34; alt=&#34;RIP&#34;&gt;&lt;/p&gt;
+&lt;p&gt;It&amp;rsquo;s essential to remember the unprecedented, never-to-be-repeated horrors
+of WWII. What unsettles me today is the difference between the potency of our past glories,
+and the ease with which we collectively neglect future moral risks.
+We are rarely invited to consider how children born today will judge us.
+Regardless, they will eventually see us through
+the same dusty lens with which we remember many veterans of WWII. I fear that the
+view will be different.&lt;/p&gt;
+&lt;p&gt;Nobody celebrating victory in Europe could have anticipated the social,
+technological and environmental changes that have taken place since.
+The pace of upheaval continues to accelerate, and its direction needs to be checked
+if our present generations hope to be remembered as fondly as those of 1945.&lt;/p&gt;
+&lt;h1 id=&#34;0-years-ago&#34;&gt;0 years ago&lt;/h1&gt;
+&lt;p&gt;The most consequential change since WWII is
+the
+&lt;a href=&#34;https://ourworldindata.org/grapher/co2-concentration-long-term?time=1900..&#34;&gt;increase&lt;/a&gt; in
+the amount of CO2 in the atmosphere, from 311 ppm to
+&lt;a href=&#34;https://www.esrl.noaa.gov/gmd/ccgg/trends/&#34;&gt;over 415 ppm&lt;/a&gt;,
+with global yearly emissions having risen
+&lt;a href=&#34;https://ourworldindata.org/co2-and-other-greenhouse-gas-emissions#how-have-global-co2-emissions-changed-over-time&#34;&gt;almost ten-fold&lt;/a&gt;.&lt;/p&gt;
+&lt;iframe src=&#34;https://ourworldindata.org/grapher/co2-concentration-long-term?time=0..&#34; style=  &#34;width:100%; height:600px; border:0px none;&#34;&gt;&lt;/iframe&gt;
+
+&lt;p&gt;This exponential growth means that at the time of writing, anyone
+born before 1991 has lived through a doubling of human-generated CO2. In other words,
+if you are over 29, more fossil fuels have been burned during your lifetime than
+in the rest of human history.&lt;/p&gt;
+&lt;p&gt;As a result of this atmospheric change, global average surface temperature has
+&lt;a href=&#34;https://www.climate.gov/news-features/understanding-climate/climate-change-global-temperature&#34;&gt;increased&lt;/a&gt;
+by 1°C since 1945, reaching an average of 14.9°C.&lt;/p&gt;
+&lt;p&gt;Imagining the world as an oven,
+we have spent the years since VE day increasing the temperature from the equivalent of
+gas mark 6 to gas mark 7, and we are still turning up the heat.&lt;/p&gt;
+&lt;h1 id=&#34;-75-years-ago&#34;&gt;-75 years ago&lt;/h1&gt;
+&lt;p&gt;The impacts of global heating are increasingly obvious. In many places you need only look out of your window to witness things that you&amp;rsquo;ve never seen; from the relatively benign, like the UK&amp;rsquo;s barbecue summer in 2018, to the disastrous global wildfire season last year.&lt;/p&gt;
+&lt;p&gt;The predicted impacts of increasing temperature are
+&lt;a href=&#34;https://www.nationalgeographic.com/environment/2018/10/ipcc-report-climate-change-impacts-forests-emissions/&#34;&gt;well documented&lt;/a&gt;,
+but there is also a disturbing trend of milestones arriving
+&lt;a href=&#34;https://weather.com/science/environment/news/2019-06-14-permafrost-melting-sooner&#34;&gt;faster than expected&lt;/a&gt;,
+with &lt;a href=&#34;https://en.wikipedia.org/wiki/Polar_amplification&#34;&gt;disproportionate warming&lt;/a&gt;
+of the polar regions disrupting sea ice, glaciers and permafrost.
+Alarms are ringing that the interrelationships between changing
+ecosystems will have a greater and more imminent impact on temperature than our existing models predict.&lt;/p&gt;
+&lt;p&gt;Unless we all make radical changes to our patterns of production and consumption today,
+billions of people in 2095 will be at a far greater risk of
+&lt;a href=&#34;https://www.nature.com/articles/s41586-019-1822-y&#34;&gt;drought&lt;/a&gt;,
+&lt;a href=&#34;https://www.nature.com/articles/nclimate2153&#34;&gt;famine&lt;/a&gt;,
+&lt;a href=&#34;https://www.pnas.org/content/early/2020/04/28/1910114117&#34;&gt;heat&lt;/a&gt;,
+and
+&lt;a href=&#34;https://www.theguardian.com/cities/ng-interactive/2017/nov/03/three-degree-world-cities-drowned-global-warming&#34;&gt;sea level rise&lt;/a&gt;. It&amp;rsquo;s conceivable that the human cost of climate change
+will outstrip WWII altogether. In spite of a &lt;a href=&#34;https://ourworldindata.org/grapher/co-emissions-per-capita&#34;&gt;100-fold difference&lt;/a&gt; in carbon emissions per head between certain countries,
+it is those least responsible for the problem who are most vulnerable to its impacts.&lt;/p&gt;
+&lt;h1 id=&#34;today&#34;&gt;Today&lt;/h1&gt;
+&lt;p&gt;Looking back from 2020, there is an irony to the fact that at the war&amp;rsquo;s end in 1945,
+the scientific basis for understanding man-made climate change was already
+&lt;a href=&#34;https://www.rsc.org/images/Arrhenius1896_tcm18-173546.pdf&#34;&gt;fifty years old&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;I hope that as a nation, we will begin to look to the future with the same intensity and clarity
+with which we  remember the past, and ask ourselves whether we aspire to leave a better
+world to those who follow us - and what we are willing to change in order to achieve it.
+We will see the consequences of our behaviour sooner than many appear to expect.&lt;/p&gt;
+&lt;p&gt;There is still some cause for optimism, and hope for the triumph of human ingenuity. The question
+that bothers me, is whether we will succeed in preserving this for others
+throughout the 21st century.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Hello World</title>
+      <link>/posts/hello-world/</link>
+      <pubDate>Sun, 03 May 2020 13:14:26 +0100</pubDate>
+      
+      <guid>/posts/hello-world/</guid>
+      <description>&lt;h1 id=&#34;dancronin-is-live&#34;&gt;dancron.in is live.&lt;/h1&gt;
+&lt;p&gt;Hosting by &lt;a href=&#34;https://pages.github.com/&#34;&gt;GitHub&lt;/a&gt;, site by &lt;a href=&#34;https://gohugo.io/&#34;&gt;Hugo&lt;/a&gt; with &lt;a href=&#34;https://github.com/mitrichius/hugo-theme-anubis&#34;&gt;Anubis&lt;/a&gt; theme.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Automation is a ladder: part one</title>
+      <link>/posts/automation-is-a-ladder-part-one/</link>
+      <pubDate>Thu, 30 Apr 2020 13:33:00 +0100</pubDate>
+      
+      <guid>/posts/automation-is-a-ladder-part-one/</guid>
+      <description>&lt;h1 id=&#34;why-when-and-how-to-automate-tasks-in-esris-arcgis-pro&#34;&gt;Why, when and how to automate tasks in Esri&amp;rsquo;s ArcGIS Pro.&lt;/h1&gt;
+&lt;p&gt;Read on at &lt;a href=&#34;https://medium.com/@dan.cronin/automation-is-a-ladder-part-one-78634d71667f/&#34;&gt;Medium&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>The Perfect Script Tool</title>
+      <link>/posts/perfect-script-tool/</link>
+      <pubDate>Fri, 24 Apr 2020 13:32:41 +0100</pubDate>
+      
+      <guid>/posts/perfect-script-tool/</guid>
+      <description>&lt;h1 id=&#34;script-tool-template-for-esris-arcgis-pro&#34;&gt;Script tool template for Esri&amp;rsquo;s ArcGIS Pro.&lt;/h1&gt;
+&lt;p&gt;Read on at &lt;a href=&#34;https://medium.com/@dan.cronin/the-perfect-script-tool-for-esris-arcgis-pro-138817a30a0a/&#34;&gt;Medium&lt;/a&gt; or check the repo on &lt;a href=&#34;https://github.com/countmapula/PerfectScriptTool/&#34;&gt;GitHub&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Crowdsource against COVID-19</title>
+      <link>/posts/crowdsource-against-covid/</link>
+      <pubDate>Fri, 03 Apr 2020 13:33:22 +0100</pubDate>
+      
+      <guid>/posts/crowdsource-against-covid/</guid>
+      <description>&lt;h1 id=&#34;fighting-covid-is-hot&#34;&gt;Fighting COVID is HOT.&lt;/h1&gt;
+&lt;p&gt;Technical volunteering and up-skilling opportunities with the &lt;a href=&#34;https://www.hotosm.org/&#34;&gt;Humanitarian OpenStreetMap team&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Read on at &lt;a href=&#34;https://www.linkedin.com/pulse/something-else-you-can-do-covid-19-daniel-cronin/&#34;&gt;LinkedIn&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
