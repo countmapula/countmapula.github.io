@@ -14,7 +14,7 @@
 <link rel="icon" type="image/x-icon" href="/favicon.ico">
 <link rel="apple-touch-icon-precomposed" href="/favicon.png">
 
-<link rel="stylesheet" href="/css/style.css?rnd=1597349743" />
+<link rel="stylesheet" href="/css/style.css?rnd=1597350695" />
 
 
 
@@ -68,7 +68,10 @@
         <div class="content">
             <p><a href="https://data.dancron.in/covid-gb/">https://data.dancron.in/covid-gb/</a></p>
 <p>Yes, it&rsquo;s another lockdown project. Consume at your own risk and protect yourself at all times!</p>
-<p><a href="https://data.dancron.in/covid-gb/"><img src="/img/covid-gb/screen.png" alt="Screenshot"></a></p>
+<figure><a href="https://data.dancron.in/covid-gb/">
+    <img src="/img/covid-gb/screen.png" width="800px"/> </a>
+</figure>
+
 <p>I was inspired by The Guardian&rsquo;s <a href="https://www.theguardian.com/world/2020/aug/11/coronavirus-uk-map-the-latest-deaths-and-confirmed-covid-cases">data journalists</a>, and kept their colour scheme.</p>
 <p>The app reads data from the GOV.UK Coronavirus <a href="https://coronavirus.data.gov.uk/developers-guide">API</a>,
 stores it in an Amazon service and displays it using Esri&rsquo;s JS API.</p>
@@ -85,7 +88,7 @@ stores it in an Amazon service and displays it using Esri&rsquo;s JS API.</p>
 <p>You can either browse the map to get a general sense of cases across England and Wales, or use the Local Authority
 search tool to get details about your local area.</p>
 <figure>
-    <img src="/img/covid-gb/ltla-search.png"/> 
+    <img src="/img/covid-gb/ltla-search.png" width="400px"/> 
 </figure>
 
 <p>The app uses Lower Tier Local Authorities (LTLAs) and includes all of the LTLA data being published at the time of writing.</p>
@@ -119,7 +122,7 @@ the actual boundaries of the upper-tier local authorities (UTLAs).</p>
 as clear as possible, but it comes with some shortcomings.</p>
 <p>Firstly, when viewed through the lens of local authorities, cases of coronavirus are not equal.
 Detection of one case in Birmingham, population 1,000,000, is not of equal concern to detection of one
-case in Orkney, population 20,000. The risk the the individuals concerned are equal, but the proportion of infected people
+case in Orkney, population 20,000. The risks to the infected individuals are equal, but the proportion of infected people
 in Orkney is greater.</p>
 <p>Secondly, when we consider percentages of raw case numbers, we lose a lot of information about the magnitude of the problem.
 To continue with the examples above, if Birmingham&rsquo;s detections increased from one to two, that would be a case rate
@@ -130,7 +133,7 @@ For the purposes of TG&rsquo;s map, both are local increases of 100% - even thou
 Places with the most intense green or pink colours are over two standard deviations away from the average case rate, or the average
 rate of change.</p>
 <figure>
-    <img src="/img/covid-gb/legend.png"/> 
+    <img src="/img/covid-gb/legend.png" width="400px"/> 
 </figure>
 
 <p>Presenting this information in a way which is accurate, accessible and transparent is challenging and I hope that I&rsquo;ve made
@@ -140,7 +143,10 @@ sensible compromises.</p>
 <p>Firstly, apologies to Scotland. The UK Gov API does not include Scottish data at the local level. I make no political comment here.</p>
 <h3 id="magnitude">Magnitude</h3>
 <p>My cartographic choices don&rsquo;t capture far outliers, although you can see specific details in the pop ups.</p>
-<p><img src="/img/covid-gb/popup.png" alt="Popup"></p>
+<figure>
+    <img src="/img/covid-gb/popup.png" width="400px"/> 
+</figure>
+
 <p>As cases hopefully approach zero, they
 become very difficult to meaningfully visualise (a good problem to have). I&rsquo;m sure others can point out statistical weaknesses, and I&rsquo;m open to feedback.</p>
 <h3 id="the-legend">The legend</h3>

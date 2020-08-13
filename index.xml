@@ -19,7 +19,10 @@
       <guid>/posts/covid-gb/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;https://data.dancron.in/covid-gb/&#34;&gt;https://data.dancron.in/covid-gb/&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Yes, it&amp;rsquo;s another lockdown project. Consume at your own risk and protect yourself at all times!&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;https://data.dancron.in/covid-gb/&#34;&gt;&lt;img src=&#34;/img/covid-gb/screen.png&#34; alt=&#34;Screenshot&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;figure&gt;&lt;a href=&#34;https://data.dancron.in/covid-gb/&#34;&gt;
+    &lt;img src=&#34;/img/covid-gb/screen.png&#34; width=&#34;800px&#34;/&gt; &lt;/a&gt;
+&lt;/figure&gt;
+
 &lt;p&gt;I was inspired by The Guardian&amp;rsquo;s &lt;a href=&#34;https://www.theguardian.com/world/2020/aug/11/coronavirus-uk-map-the-latest-deaths-and-confirmed-covid-cases&#34;&gt;data journalists&lt;/a&gt;, and kept their colour scheme.&lt;/p&gt;
 &lt;p&gt;The app reads data from the GOV.UK Coronavirus &lt;a href=&#34;https://coronavirus.data.gov.uk/developers-guide&#34;&gt;API&lt;/a&gt;,
 stores it in an Amazon service and displays it using Esri&amp;rsquo;s JS API.&lt;/p&gt;
@@ -36,7 +39,7 @@ stores it in an Amazon service and displays it using Esri&amp;rsquo;s JS API.&lt
 &lt;p&gt;You can either browse the map to get a general sense of cases across England and Wales, or use the Local Authority
 search tool to get details about your local area.&lt;/p&gt;
 &lt;figure&gt;
-    &lt;img src=&#34;/img/covid-gb/ltla-search.png&#34;/&gt; 
+    &lt;img src=&#34;/img/covid-gb/ltla-search.png&#34; width=&#34;400px&#34;/&gt; 
 &lt;/figure&gt;
 
 &lt;p&gt;The app uses Lower Tier Local Authorities (LTLAs) and includes all of the LTLA data being published at the time of writing.&lt;/p&gt;
@@ -70,7 +73,7 @@ the actual boundaries of the upper-tier local authorities (UTLAs).&lt;/p&gt;
 as clear as possible, but it comes with some shortcomings.&lt;/p&gt;
 &lt;p&gt;Firstly, when viewed through the lens of local authorities, cases of coronavirus are not equal.
 Detection of one case in Birmingham, population 1,000,000, is not of equal concern to detection of one
-case in Orkney, population 20,000. The risk the the individuals concerned are equal, but the proportion of infected people
+case in Orkney, population 20,000. The risks to the infected individuals are equal, but the proportion of infected people
 in Orkney is greater.&lt;/p&gt;
 &lt;p&gt;Secondly, when we consider percentages of raw case numbers, we lose a lot of information about the magnitude of the problem.
 To continue with the examples above, if Birmingham&amp;rsquo;s detections increased from one to two, that would be a case rate
@@ -81,7 +84,7 @@ For the purposes of TG&amp;rsquo;s map, both are local increases of 100% - even 
 Places with the most intense green or pink colours are over two standard deviations away from the average case rate, or the average
 rate of change.&lt;/p&gt;
 &lt;figure&gt;
-    &lt;img src=&#34;/img/covid-gb/legend.png&#34;/&gt; 
+    &lt;img src=&#34;/img/covid-gb/legend.png&#34; width=&#34;400px&#34;/&gt; 
 &lt;/figure&gt;
 
 &lt;p&gt;Presenting this information in a way which is accurate, accessible and transparent is challenging and I hope that I&amp;rsquo;ve made
@@ -91,7 +94,10 @@ sensible compromises.&lt;/p&gt;
 &lt;p&gt;Firstly, apologies to Scotland. The UK Gov API does not include Scottish data at the local level. I make no political comment here.&lt;/p&gt;
 &lt;h3 id=&#34;magnitude&#34;&gt;Magnitude&lt;/h3&gt;
 &lt;p&gt;My cartographic choices don&amp;rsquo;t capture far outliers, although you can see specific details in the pop ups.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;/img/covid-gb/popup.png&#34; alt=&#34;Popup&#34;&gt;&lt;/p&gt;
+&lt;figure&gt;
+    &lt;img src=&#34;/img/covid-gb/popup.png&#34; width=&#34;400px&#34;/&gt; 
+&lt;/figure&gt;
+
 &lt;p&gt;As cases hopefully approach zero, they
 become very difficult to meaningfully visualise (a good problem to have). I&amp;rsquo;m sure others can point out statistical weaknesses, and I&amp;rsquo;m open to feedback.&lt;/p&gt;
 &lt;h3 id=&#34;the-legend&#34;&gt;The legend&lt;/h3&gt;
