@@ -14,7 +14,7 @@
 <link rel="icon" type="image/x-icon" href="/favicon.ico">
 <link rel="apple-touch-icon-precomposed" href="/favicon.png">
 
-<link rel="stylesheet" href="/css/style.css?rnd=1597182065" />
+<link rel="stylesheet" href="/css/style.css?rnd=1597349743" />
 
 
 
@@ -68,7 +68,8 @@
         <div class="content">
             <p><a href="https://data.dancron.in/covid-gb/">https://data.dancron.in/covid-gb/</a></p>
 <p>Yes, it&rsquo;s another lockdown project. Consume at your own risk and protect yourself at all times!</p>
-<p>I was inspired by The Guardian&rsquo;s <a href="https://www.theguardian.com/world/2020/aug/11/coronavirus-uk-map-the-latest-deaths-and-confirmed-covid-cases">data journalists</a> and kept their tasty colour scheme.</p>
+<p><a href="https://data.dancron.in/covid-gb/"><img src="/img/covid-gb/screen.png" alt="Screenshot"></a></p>
+<p>I was inspired by The Guardian&rsquo;s <a href="https://www.theguardian.com/world/2020/aug/11/coronavirus-uk-map-the-latest-deaths-and-confirmed-covid-cases">data journalists</a>, and kept their colour scheme.</p>
 <p>The app reads data from the GOV.UK Coronavirus <a href="https://coronavirus.data.gov.uk/developers-guide">API</a>,
 stores it in an Amazon service and displays it using Esri&rsquo;s JS API.</p>
 <p>It&rsquo;s designed to answer two questions:</p>
@@ -77,12 +78,16 @@ stores it in an Amazon service and displays it using Esri&rsquo;s JS API.</p>
 <p>Is the rate of COVID detection in my area high or low, compared to other places?</p>
 </li>
 <li>
-<p>Is the direction of travel (that is, the rate of change), good or bad compared to other areas?</p>
+<p>Is the change in the rate of cases good or bad compared, to other areas?</p>
 </li>
 </ul>
 <h2 id="how-does-it-work">How does it work?</h2>
 <p>You can either browse the map to get a general sense of cases across England and Wales, or use the Local Authority
 search tool to get details about your local area.</p>
+<figure>
+    <img src="/img/covid-gb/ltla-search.png"/> 
+</figure>
+
 <p>The app uses Lower Tier Local Authorities (LTLAs) and includes all of the LTLA data being published at the time of writing.</p>
 <p>Icons at the top left are,</p>
 <ul>
@@ -90,7 +95,15 @@ search tool to get details about your local area.</p>
 <li>Toggle case rate / case change</li>
 <li>Link to this blog</li>
 </ul>
+<figure>
+    <img src="/img/covid-gb/icon-set.png"/> 
+</figure>
+
 <p>Mobile users will want to toggle the legend button (bottom right).</p>
+<figure>
+    <img src="/img/covid-gb/legend-toggle.png"/> 
+</figure>
+
 <h1 id="design">Design</h1>
 <p>There are a few differences between this app and TG&rsquo;s map, some obvious, some less so.</p>
 <h2 id="cartogram">Cartogram</h2>
@@ -116,21 +129,28 @@ For the purposes of TG&rsquo;s map, both are local increases of 100% - even thou
 <p>I have bravely avoided the problem of communicating this by not quantifying the legend at all - it just says better or worse, which is probably too vague for a mainstream news outlet. The underlying classifications I&rsquo;ve used are based on standard deviations from the average.
 Places with the most intense green or pink colours are over two standard deviations away from the average case rate, or the average
 rate of change.</p>
+<figure>
+    <img src="/img/covid-gb/legend.png"/> 
+</figure>
+
 <p>Presenting this information in a way which is accurate, accessible and transparent is challenging and I hope that I&rsquo;ve made
 sensible compromises.</p>
 <h2 id="caveats">Caveats</h2>
 <h3 id="scotland">Scotland</h3>
 <p>Firstly, apologies to Scotland. The UK Gov API does not include Scottish data at the local level. I make no political comment here.</p>
 <h3 id="magnitude">Magnitude</h3>
-<p>My cartographic choices don&rsquo;t capture far outliers, although you can see specific details in the pop ups. As cases hopefully approach zero, they
+<p>My cartographic choices don&rsquo;t capture far outliers, although you can see specific details in the pop ups.</p>
+<p><img src="/img/covid-gb/popup.png" alt="Popup"></p>
+<p>As cases hopefully approach zero, they
 become very difficult to meaningfully visualise (a good problem to have). I&rsquo;m sure others can point out statistical weaknesses, and I&rsquo;m open to feedback.</p>
 <h3 id="the-legend">The legend</h3>
 <p>I have used the term &lsquo;Significant&rsquo; loosely -  I have not tested for statistical significance.</p>
 <h3 id="known-issues">Known issues</h3>
 <ul>
-<li>The JavaScript API used for display generalises the hexagons, leaving them irregular. Once seen, never unseen.</li>
+<li>The JavaScript API used for display generalises the hexagons, leaving them irregular. Once seen, never unseen. I&rsquo;m sure there is a way to override this, somehow&hellip;</li>
 <li>The latest result&rsquo;s date is not always consistent across local authorities. I&rsquo;m using the latest results available, at the expense
 of consistency in some cases.</li>
+<li>Some issues with retrieval of information for individual LTLAs</li>
 </ul>
 <p>Thanks and stay safe.</p>
 
