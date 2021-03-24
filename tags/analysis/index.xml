@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>analysis on dancron.in</title>
+    <link>/tags/analysis/</link>
+    <description>dancron.in (analysis)</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-gb</language>
+    <lastBuildDate>Thu, 18 Feb 2021 17:38:01 +0000</lastBuildDate>
+    
+    <atom:link href="/tags/analysis/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Officially #geoawesome</title>
+      <link>/posts/geoawesomeness/</link>
+      <pubDate>Thu, 18 Feb 2021 17:38:01 +0000</pubDate>
+      
+      <guid>/posts/geoawesomeness/</guid>
+      <description>&lt;p&gt;I was delighted to present at #geoawesomeness on behalf of Knight Frank, to share some of the ways that we make use of travel time analysis to evaluate real estate opportunities.&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/6Ags0rprMNY&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Thanks again to Muthu, Aleks and the TravelTime team for having me.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

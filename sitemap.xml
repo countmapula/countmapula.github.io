@@ -3,12 +3,47 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>/tags/covid/</loc>
-    <lastmod>2021-01-30T10:35:54+00:00</lastmod>
+    <loc>/tags/analysis/</loc>
+    <lastmod>2021-02-18T17:38:01+00:00</lastmod>
   </url>
   
   <url>
     <loc>/</loc>
+    <lastmod>2021-02-18T17:38:01+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/geoawesomeness/</loc>
+    <lastmod>2021-02-18T17:38:01+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/knight-frank/</loc>
+    <lastmod>2021-02-18T17:38:01+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/geoawesomeness/</loc>
+    <lastmod>2021-02-18T17:38:01+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/</loc>
+    <lastmod>2021-02-18T17:38:01+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/</loc>
+    <lastmod>2021-02-18T17:38:01+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/traveltime/</loc>
+    <lastmod>2021-02-18T17:38:01+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/covid/</loc>
     <lastmod>2021-01-30T10:35:54+00:00</lastmod>
   </url>
   
@@ -23,17 +58,7 @@
   </url>
   
   <url>
-    <loc>/posts/</loc>
-    <lastmod>2021-01-30T10:35:54+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>/posts/splendid-isolation/</loc>
-    <lastmod>2021-01-30T10:35:54+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tags/</loc>
     <lastmod>2021-01-30T10:35:54+00:00</lastmod>
   </url>
   
